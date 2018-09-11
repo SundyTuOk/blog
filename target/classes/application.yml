@@ -1,0 +1,31 @@
+#server.port=8080
+#
+## THYMELEAF
+#spring.thymeleaf.encoding=UTF-8
+## 热部署静态文件
+#spring.thymeleaf.cache=false
+## 使用HTML5标准
+#spring.thymeleaf.mode=HTML5
+#
+#
+##热部署生效
+#spring.devtools.restart.enabled=true
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    encoding: UTF-8
+    cache: false
+    mode: HTML5
+  devtools:
+    restart:
+      enabled: true
+  messages:
+    fallbackToSystemLocale: false
+    basename: i18n/message
+
+
+
+
+
+ 

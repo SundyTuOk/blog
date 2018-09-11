@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../bootstrap/css/bootstrap.css" th:href="@{~/bootstrap/css/bootstrap.css}" rel="stylesheet">
+    <link href="../../font-awesome-4.7.0/css/font-awesome.css" th:href="@{~/font-awesome-4.7.0/css/font-awesome.css}" rel="stylesheet">
+    <link href="../../css/admins/admins.css" th:href="@{~/css/admins/admins.css}" rel="stylesheet">
+
+    <title>管理员操作</title>
+
+</head>
+<div th:replace="~{/common/header::header}"/>
+<body>
+
+
+    <!-- 左侧栏目 -->
+    <!--<div class="col-md-4 col-xl-3" style="border: 2px solid yellow">
+
+
+        &lt;!&ndash; 分类 &ndash;&gt;
+        <div class="card ">
+            <h5 class="card-header"><i class="fa fa-bars" aria-hidden="true"></i> 菜单</h5>
+
+            <ul class="list-group blog-menu">
+                <a href="javascript:void(0)" class="list-group-item "
+                   data-th-attr="url=www.baidu.com">
+                    用户管理
+                </a>
+                <a href="javascript:void(0)" class="list-group-item "
+                   data-th-attr="url=www.baidu.com">
+                    系统设置
+                </a>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="col-md-8 col-xl-9" style="border: 2px solid green">
+
+
+        &lt;!&ndash; 分类 &ndash;&gt;
+        <div class="card ">
+
+        </div>
+
+    </div>-->
+
+    <div class="container admins-container">
+        <div class="row">
+            <div class="col-md-1" style="border: 2px solid black"></div>
+
+            <div class="col-md-3 list-group" style="border: 2px solid red">
+                <h3 class="list-group-item"><i class="fa fa-bars fa-fw" aria-hidden="true"></i> 菜单</h3>
+                <ul class="list-group blog-menu">
+                    <li>
+                        <a data-th-attr="" class="list-group-item active" href="#"><i class="fa fa-user fa-fw"></i>&nbsp; 用户管理</a>
+                    </li>
+                    <li>
+                        <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
+                    </li>
+                    <li>
+                        <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
+                    </li>
+                </ul>
+
+
+
+                <!--<h3 class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; 菜单</h3>-->
+
+            </div>
+
+            <div class="col-md-7" style="border: 2px solid yellow"></div>
+
+            <div class="col-md-1" style="border: 2px solid blue"/></div>
+
+        </div>
+
+    </div>
+
+</body>
+<div th:replace="~{/common/header::footer}"/>
+<script src="../../js/admins/admins.js" th:src="@{~/js/admins/admins.js}"></script>
+</html>
