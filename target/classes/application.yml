@@ -23,6 +23,16 @@ spring:
   messages:
     fallbackToSystemLocale: false
     basename: i18n/message
+  datasource:
+    url: jdbc:mysql://192.168.7.151:3306/mysql1?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+#spring.datasource.url=jdbc:mysql://192.168.7.151:3306/mysql1?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+#spring.datasource.username=root
+#spring.datasource.password=123456
+#spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
 
 
